@@ -18,6 +18,11 @@ def divide(x, y):
 #Building an input operation
 operation = input(f'Select an operator: "+"  "-"  "*" "/" -->   ')
 
+operation_list = ['+', '-', '*', '/']
+if operation not in operation_list:
+    print('invalid operator')
+    exit()
+
 # X and Y values input:
 x = float(input('Input a value:  '))
 y = float(input('Input a value:  '))
